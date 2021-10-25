@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <section>
+        <div style="color:red" id="error"></div>
+      <form>
+        <label for="nom">Nom* : <input required id="nom" name="nom" type="text" placeholder="Entre 1 et 30 caractères" pattern="[a-zA-Z]{1,30}" /></label><br />
+        <label for="prenom">Prénom* : <input required id="prenom" name="prenom" type="text" placeholder="Entre 1 et 30 caractères" pattern="[a-zA-Z]{1,30}" /></label><br />
+        <label for="adresse">Adresse* : <input required id="adresse" name="adresse" placeholder="Maximum 30 caractères" pattern="[a-zA-Z]{1,30}" type="text" /></label><br />
+        <label for="cp">Code postal* : <input required id="cp" name="cp" type="text" pattern="[0,9]{5}" /></label><br />
+        <label for="ville">Ville* : <input required id="ville" name="ville" type="text" placeholder="Maximum 50 caractères" pattern="[a-zA-Z]{1,50}" /></label><br />
+        <label for="tel">Téléphone* : <input required id="tel" name="tel" type="text" pattern="[0-9]{10}" /></label><br />
+        <div>
+            Genre
+            <label for="genre"><input required name="genre" id="typeM" type="radio" />M.</label>
+            <label for="genre"><input required name="genre" id="typeMme" type="radio" />Mme.</label>
+        </div><br />
+        <label for="email">Email* : <input required id="email" name="email" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /></label><br />
+        <label for="password">Password* : <input required id="password" name="password" type="password" /></label><br />
+        <label for="password2">Confirm password* : <input required id="password2" name="password2" type="password" /></label><br />
+        <input type="submit" id="envoyer" value="Envoyer" />
+        <p>* : Obligatoire</p>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
